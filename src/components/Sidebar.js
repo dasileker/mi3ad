@@ -3,9 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import SocialIcons from './UI/SocialIcons';
 import { logout } from '../actions/auth';
-// import logo from '../assets/images/logo.png';
+import logo from '../assets/images/logo.png';
 import classes from '../styles/Sidebar.module.css';
 
 const Sidebar = () => {
@@ -28,7 +27,7 @@ const Sidebar = () => {
       </button>
       <nav className={`${classes.sidenav} ${classes.toggle}`}>
         <NavLink exact to="/">
-          {/* <img src="" alt="logo" className={classes.logo} /> */}
+          <img src={logo} alt="logo" className={classes.logo} />
         </NavLink>
         {currentUser
             && (
@@ -74,7 +73,6 @@ const Sidebar = () => {
           </ul>
         )}
         <footer className={classes.social}>
-          <SocialIcons />
           <p>&copy;2021, MAW3ID</p>
         </footer>
       </nav>
