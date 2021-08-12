@@ -1,70 +1,147 @@
-# Getting Started with Create React App
+<!--
+*** Thanks for checking out this README Template. If you have a suggestion that would
+*** make this better, please fork the repo and create a pull request or simply open
+*** an issue with the tag "enhancement".
+*** Thanks again! Now go create something AMAZING! :D
+-->
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
 
-## Available Scripts
+<!-- PROJECT LOGO -->
 
-In the project directory, you can run:
+<br />
+<p align="center">
 
-### `npm start`
+  <h2 align="center">Mi3ad (Appiontment) Doctor's</h2>
+  <p align="center">A react-redux single page responsive application, where user can see the details of doctors and book an appointment with the doctor. A user needs to sign up and login to book/delete an appointment.</p>
+  <a href="git@github.com:alishabab/appointment-booking-frontend.git">
+    <p align="center"> <img src="./page1.jpeg" alt="" width="600" height="200"> </p>
+  </a>
+  <p align="center">
+    <a href="https://github.com/alishabab/appointment-booking-frontend/issues">Report Bug</a>
+    · 
+    <a href="https://github.com/alishabab/appointment-booking-frontend/issues">Request Feature</a>
+  </p>
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* [About the Project](#about-the-project)
+* [Installation](#installation)
+* [Test](#test)
+* [Live Link](#Live-Link)
+* [Built With](#built-with)
+* [Nice to have features](#nice-to-have-features)
+* [Potential Future Updates](#potential-future-updates)
+* [Contact](#authors)
+* [Acknowledgements](#acknowledgments)
 
-### `npm test`
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+In this project I have developed a single page application for a Hospital with react and redux libraries. App name is Mi3ad(Appiontmenty) Doctor's. A user can sign up/login to see the details of doctors and book an appointment.
 
-### `npm run build`
+App uses react router to route to different components. 
+Backend APIs are developed with Ruby on Rails. [Click here](https://github.com/dasileker/final-capstone-api/tree/feature) to see backend project details.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<!-- Live Link  -->
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Live Link
 
-### `npm run eject`
+<a href="https://mi3ad.herokuapp.com/">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
+</a>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- INSTALLATION -->
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Installation
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+To run the app locally, clone the repository, navigate to it's directory.
 
-## Learn More
+#### Follow these commands step by step:-
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+git clone git@github.com:https://github.com/dasileker/mi3ad/tree/feature
+cd mi3ad
+npm install
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Now go to [localhost:3000](http://localhost:3000) in your browser.
 
-### Code Splitting
+<!-- Test -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Test
 
-### Analyzing the Bundle Size
+To run unit test run `npm test` in root directory.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<!-- BUILD WITH -->
 
-### Making a Progressive Web App
+## Built With
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- HTML/CSS
+- React
+- Redux
+- React Router
+- Bootstrap
+- CSS Modules
+- Axios
+- Eslint
+- Stylelint
+- ES6
+- NPM
+- React Alert
+- Font-Awesome
+- Heroku for Live version deployment
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+<!-- Nice to have features -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 'Nice to have features' that are implemented
+- User authentication using JWT
+- Responsive to mobile and desktop screens
+- React alert
 
-### `npm run build` fails to minify
+<!-- potential future updates -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Potential Future Updates
+
+- Department-wise doctors list
+- Online fee payment
+- Doctor's available slots
+- Rendering Optimization
+
+<!-- CONTACT -->
+## Authors
+
+👤 **Zerradi Amine** 
+    
+- [LinkedIn](https://www.linkedin.com/in/amine-zerradi/)
+- [GitHub](https://github.com/dasileker)
+- [Email](zerradi.amine@gmail.com)
+
+<!-- acknowledgments -->
+
+## Acknowledgments
+
+- [Murat Korkmaz](https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign) for design
+- [Microverse](https://microverse.org)
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.
