@@ -1,245 +1,245 @@
-const user_service = require("./user.service")
+const userService = require('./user.service');
 
-describe("user_service.default.getDoctors", () => {
-  test("0", () => {
-    let callFunction = () => {
-      user_service.default.getDoctors()
-    }
+describe('userService.default.getDoctors', () => {
+  test('0', () => {
+    const callFunction = () => {
+      userService.default.getDoctors();
+    };
 
-    expect(callFunction).not.toThrow()
-  })
-})
+    expect(callFunction).not.toThrow();
+  });
+});
 
-describe("user_service.default.getDoctor", () => {
-  test("0", () => {
-    let callFunction = () => {
-      user_service.default.getDoctor("myDIV")
-    }
+describe('userService.default.getDoctor', () => {
+  test('0', () => {
+    const callFunction = () => {
+      userService.default.getDoctor('myDIV');
+    };
 
-    expect(callFunction).not.toThrow()
-  })
+    expect(callFunction).not.toThrow();
+  });
 
-  test("1", () => {
-    let callFunction = () => {
-      user_service.default.getDoctor(undefined)
-    }
+  test('1', () => {
+    const callFunction = () => {
+      userService.default.getDoctor(undefined);
+    };
 
-    expect(callFunction).not.toThrow()
-  })
-})
+    expect(callFunction).not.toThrow();
+  });
+});
 
-describe("user_service.default.getAppointments", () => {
-  test("0", () => {
-    let callFunction = () => {
-      user_service.default.getAppointments("myDIV")
-    }
+describe('userService.default.getAppointments', () => {
+  test('0', () => {
+    const callFunction = () => {
+      userService.default.getAppointments('myDIV');
+    };
 
-    expect(callFunction).not.toThrow()
-  })
+    expect(callFunction).not.toThrow();
+  });
 
-  test("1", () => {
-    let callFunction = () => {
-      user_service.default.getAppointments(undefined)
-    }
+  test('1', () => {
+    const callFunction = () => {
+      userService.default.getAppointments(undefined);
+    };
 
-    expect(callFunction).not.toThrow()
-  })
-})
+    expect(callFunction).not.toThrow();
+  });
+});
 
-describe("user_service.default.getAppointment", () => {
-  test("0", () => {
-    let callFunction = () => {
-      user_service.default.getAppointment("user123", true)
-    }
+describe('userService.default.getAppointment', () => {
+  test('0', () => {
+    const callFunction = () => {
+      userService.default.getAppointment('user123', true);
+    };
 
-    expect(callFunction).not.toThrow()
-  })
+    expect(callFunction).not.toThrow();
+  });
 
-  test("1", () => {
-    let callFunction = () => {
-      user_service.default.getAppointment("user123", false)
-    }
+  test('1', () => {
+    const callFunction = () => {
+      userService.default.getAppointment('user123', false);
+    };
 
-    expect(callFunction).not.toThrow()
-  })
+    expect(callFunction).not.toThrow();
+  });
 
-  test("2", () => {
-    let callFunction = () => {
-      user_service.default.getAppointment("user-name", false)
-    }
+  test('2', () => {
+    const callFunction = () => {
+      userService.default.getAppointment('user-name', false);
+    };
 
-    expect(callFunction).not.toThrow()
-  })
+    expect(callFunction).not.toThrow();
+  });
 
-  test("3", () => {
-    let callFunction = () => {
-      user_service.default.getAppointment("user-name", true)
-    }
+  test('3', () => {
+    const callFunction = () => {
+      userService.default.getAppointment('user-name', true);
+    };
 
-    expect(callFunction).not.toThrow()
-  })
+    expect(callFunction).not.toThrow();
+  });
 
-  test("4", () => {
-    let callFunction = () => {
-      user_service.default.getAppointment(123, false)
-    }
+  test('4', () => {
+    const callFunction = () => {
+      userService.default.getAppointment(123, false);
+    };
 
-    expect(callFunction).not.toThrow()
-  })
+    expect(callFunction).not.toThrow();
+  });
 
-  test("5", () => {
-    let callFunction = () => {
-      user_service.default.getAppointment(undefined, undefined)
-    }
+  test('5', () => {
+    const callFunction = () => {
+      userService.default.getAppointment(undefined, undefined);
+    };
 
-    expect(callFunction).not.toThrow()
-  })
+    expect(callFunction).not.toThrow();
+  });
 
-  test("6", () => {
-    let callFunction = () => {
-      user_service.default.getAppointment("user_name", true)
-    }
+  test('6', () => {
+    const callFunction = () => {
+      userService.default.getAppointment('user_name', true);
+    };
 
-    expect(callFunction).not.toThrow()
-  })
+    expect(callFunction).not.toThrow();
+  });
 
-  test("7", () => {
-    let callFunction = () => {
-      user_service.default.getAppointment("username", false)
-    }
+  test('7', () => {
+    const callFunction = () => {
+      userService.default.getAppointment('username', false);
+    };
 
-    expect(callFunction).not.toThrow()
-  })
+    expect(callFunction).not.toThrow();
+  });
 
-  test("8", () => {
-    let callFunction = () => {
-      user_service.default.getAppointment("2\\", true)
-    }
+  test('8', () => {
+    const callFunction = () => {
+      userService.default.getAppointment('2\\', true);
+    };
 
-    expect(callFunction).not.toThrow()
-  })
+    expect(callFunction).not.toThrow();
+  });
 
-  test("9", () => {
-    let callFunction = () => {
-      user_service.default.getAppointment("#user-name", false)
-    }
+  test('9', () => {
+    const callFunction = () => {
+      userService.default.getAppointment('#user-name', false);
+    };
 
-    expect(callFunction).not.toThrow()
-  })
+    expect(callFunction).not.toThrow();
+  });
 
-  test("10", () => {
-    let callFunction = () => {
-      user_service.default.getAppointment(123, true)
-    }
+  test('10', () => {
+    const callFunction = () => {
+      userService.default.getAppointment(123, true);
+    };
 
-    expect(callFunction).not.toThrow()
-  })
+    expect(callFunction).not.toThrow();
+  });
 
-  test("11", () => {
-    let callFunction = () => {
-      user_service.default.getAppointment("", undefined)
-    }
+  test('11', () => {
+    const callFunction = () => {
+      userService.default.getAppointment('', undefined);
+    };
 
-    expect(callFunction).not.toThrow()
-  })
-})
+    expect(callFunction).not.toThrow();
+  });
+});
 
-describe("user_service.default.postAppointment", () => {
-  test("0", () => {
-    let callFunction = () => {
-      user_service.default.postAppointment("user123", true, "32-01-2020")
-    }
+describe('userService.default.postAppointment', () => {
+  test('0', () => {
+    const callFunction = () => {
+      userService.default.postAppointment('user123', true, '32-01-2020');
+    };
 
-    expect(callFunction).not.toThrow()
-  })
+    expect(callFunction).not.toThrow();
+  });
 
-  test("1", () => {
-    let callFunction = () => {
-      user_service.default.postAppointment("user-name", true, "01-01-2030")
-    }
+  test('1', () => {
+    const callFunction = () => {
+      userService.default.postAppointment('user-name', true, '01-01-2030');
+    };
 
-    expect(callFunction).not.toThrow()
-  })
+    expect(callFunction).not.toThrow();
+  });
 
-  test("2", () => {
-    let callFunction = () => {
-      user_service.default.postAppointment("user_name", false, "01-13-2020")
-    }
+  test('2', () => {
+    const callFunction = () => {
+      userService.default.postAppointment('user_name', false, '01-13-2020');
+    };
 
-    expect(callFunction).not.toThrow()
-  })
+    expect(callFunction).not.toThrow();
+  });
 
-  test("3", () => {
-    let callFunction = () => {
-      user_service.default.postAppointment(123, true, "01-01-2020")
-    }
+  test('3', () => {
+    const callFunction = () => {
+      userService.default.postAppointment(123, true, '01-01-2020');
+    };
 
-    expect(callFunction).not.toThrow()
-  })
+    expect(callFunction).not.toThrow();
+  });
 
-  test("4", () => {
-    let callFunction = () => {
-      user_service.default.postAppointment("user123", true, "01-13-2020")
-    }
+  test('4', () => {
+    const callFunction = () => {
+      userService.default.postAppointment('user123', true, '01-13-2020');
+    };
 
-    expect(callFunction).not.toThrow()
-  })
+    expect(callFunction).not.toThrow();
+  });
 
-  test("5", () => {
-    let callFunction = () => {
-      user_service.default.postAppointment(undefined, undefined, undefined)
-    }
+  test('5', () => {
+    const callFunction = () => {
+      userService.default.postAppointment(undefined, undefined, undefined);
+    };
 
-    expect(callFunction).not.toThrow()
-  })
-})
+    expect(callFunction).not.toThrow();
+  });
+});
 
-describe("user_service.default.deleteAppointment", () => {
-  test("0", () => {
-    let callFunction = () => {
-      user_service.default.deleteAppointment("user name", true)
-    }
+describe('userService.default.deleteAppointment', () => {
+  test('0', () => {
+    const callFunction = () => {
+      userService.default.deleteAppointment('user name', true);
+    };
 
-    expect(callFunction).not.toThrow()
-  })
+    expect(callFunction).not.toThrow();
+  });
 
-  test("1", () => {
-    let callFunction = () => {
-      user_service.default.deleteAppointment("user-name", false)
-    }
+  test('1', () => {
+    const callFunction = () => {
+      userService.default.deleteAppointment('user-name', false);
+    };
 
-    expect(callFunction).not.toThrow()
-  })
+    expect(callFunction).not.toThrow();
+  });
 
-  test("2", () => {
-    let callFunction = () => {
-      user_service.default.deleteAppointment("user_name", true)
-    }
+  test('2', () => {
+    const callFunction = () => {
+      userService.default.deleteAppointment('user_name', true);
+    };
 
-    expect(callFunction).not.toThrow()
-  })
+    expect(callFunction).not.toThrow();
+  });
 
-  test("3", () => {
-    let callFunction = () => {
-      user_service.default.deleteAppointment("user-name", true)
-    }
+  test('3', () => {
+    const callFunction = () => {
+      userService.default.deleteAppointment('user-name', true);
+    };
 
-    expect(callFunction).not.toThrow()
-  })
+    expect(callFunction).not.toThrow();
+  });
 
-  test("4", () => {
-    let callFunction = () => {
-      user_service.default.deleteAppointment(123, true)
-    }
+  test('4', () => {
+    const callFunction = () => {
+      userService.default.deleteAppointment(123, true);
+    };
 
-    expect(callFunction).not.toThrow()
-  })
+    expect(callFunction).not.toThrow();
+  });
 
-  test("5", () => {
-    let callFunction = () => {
-      user_service.default.deleteAppointment(undefined, undefined)
-    }
+  test('5', () => {
+    const callFunction = () => {
+      userService.default.deleteAppointment(undefined, undefined);
+    };
 
-    expect(callFunction).not.toThrow()
-  })
-})
+    expect(callFunction).not.toThrow();
+  });
+});

@@ -1,11 +1,11 @@
-const user = require("./user")
+const user = require('./user');
 
-describe("user.default", () => {
-  test("0", () => {
-    let callFunction = () => {
-      user.default()
-    }
+describe('user.default', () => {
+  test('0', () => {
+    const callFunction = () => {
+      user.default();
+    };
 
-    expect(callFunction).not.toThrow()
-  })
-})
+    expect(callFunction).not.toThrow();
+  });
+});

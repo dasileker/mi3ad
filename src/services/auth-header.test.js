@@ -1,11 +1,11 @@
-const auth_header = require("./auth-header")
+const authHeader = require('./auth-header');
 
-describe("auth_header.default", () => {
-  test("0", () => {
-    let callFunction = () => {
-      auth_header.default()
-    }
+describe('authHeader.default', () => {
+  test('0', () => {
+    const callFunction = () => {
+      authHeader.default();
+    };
 
-    expect(callFunction).not.toThrow()
-  })
-})
+    expect(callFunction).not.toThrow();
+  });
+});
